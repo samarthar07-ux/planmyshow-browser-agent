@@ -1,6 +1,6 @@
-# ShowWise – Beyond the Browser
+# PLAN MY SHOW – Beyond the Browser
 
-**ShowWise** is a browser-extension prototype for movie-booking pages. It reads show and seat information from the supplied mock booking site, then displays an explainable **BUY NOW**, **WAIT**, or **SWITCH SHOW** recommendation.
+**PLAN MY SHOW** is a browser-extension prototype for movie-booking pages. It reads show and seat information from the supplied mock booking site, then displays an explainable **BUY NOW**, **WAIT**, or **SWITCH SHOW** recommendation.
 
 > **Prototype scope:** This starter project uses a local mock booking site and illustrative/simulated data. It does not connect to real ticket-booking platforms, process payments, or guarantee future prices.
 
@@ -8,7 +8,7 @@
 
 **WHACKiest 2026 – Track 2: Beyond the Browser**
 
-ShowWise demonstrates a browser agent that can observe information on a page, reason about it, and perform a limited action on the user's behalf. The prototype stops before payment; the user remains in control of checkout.
+Plan my Show demonstrates a browser agent that can observe information on a page, reason about it, and perform a limited action on the user's behalf. The prototype stops before payment; the user remains in control of checkout.
 
 ## What works in this starter
 
@@ -21,7 +21,7 @@ ShowWise demonstrates a browser agent that can observe information on a page, re
 ## Repository structure
 
 ```text
-showwise/
+planmyshow/
 ├── extension/             # Chrome extension (Manifest V3)
 ├── mock-booking-site/     # Local demo website; simulated listings only
 ├── backend/               # Notes and planned cloud integration
