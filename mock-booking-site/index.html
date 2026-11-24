@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShowWise Demo Cinema</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar"><div class="logo">SHOWWISE <span>DEMO CINEMA</span></div><span class="simulated">SIMULATED DATA</span></header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">YOUR MOVIE NIGHT, MADE SMARTER</p>
+      <h1>Find your seats.<br><em>Make a smarter call.</em></h1>
+      <p>This local demo page contains sample show and seat information for the ShowWise browser extension.</p>
+    </section>
+
+    <section class="booking" data-showwise-show data-movie="The Last Orbit" data-theatre="Nova Cinemas – Demo" data-showtime="Saturday 7:30 PM" data-ticket-price="220" data-booking-fee="24" data-days-to-show="3" data-demand="medium">
+      <div class="movie-info">
+        <div class="poster">THE<br/>LAST<br/>ORBIT</div>
+        <div>
+          <span class="eyebrow">SCI-FI · 2H 14M</span>
+          <h2>The Last Orbit</h2>
+          <p>Nova Cinemas – Demo · Saturday, 7:30 PM</p>
+          <p class="price">₹220 <small>per ticket + ₹24 booking fee</small></p>
+        </div>
+      </div>
+      <div class="scenario">
+        <label for="demand">Demo demand scenario</label>
+        <select id="demand" aria-label="Demo demand scenario">
+          <option value="medium" selected>Medium demand</option>
+          <option value="high">High demand</option>
+          <option value="low">Low demand</option>
+        </select>
+        <label for="days">Days until show</label>
+        <select id="days" aria-label="Days until show">
+          <option value="3" selected>3 days</option>
+          <option value="1">1 day</option>
+          <option value="5">5 days</option>
+        </select>
+        <label for="requested-seats">Seats you need</label>
+        <select id="requested-seats">
+          <option>2</option><option selected>4</option><option>5</option><option>6</option><option>7</option>
+        </select>
+      </div>
+      <div class="seat-section">
+        <h3>Choose seats (sample seat map)</h3>
+        <div class="screen">SCREEN</div>
+        <div class="seats" id="seats">
+          <button class="seat available" data-seat="A1" data-status="available">A1</button>
+          <button class="seat available" data-seat="A2" data-status="available">A2</button>
+          <button class="seat available" data-seat="A3" data-status="available">A3</button>
+          <button class="seat available" data-seat="A4" data-status="available">A4</button>
+          <button class="seat booked" data-seat="A5" data-status="booked" disabled>A5</button>
+          <button class="seat booked" data-seat="A6" data-status="booked" disabled>A6</button>
+          <button class="seat available" data-seat="A7" data-status="available">A7</button>
+          <button class="seat available" data-seat="A8" data-status="available">A8</button>
+        </div>
+        <p class="seat-help">Green = available · Grey = unavailable · Sample layout only</p>
+      </div>
+      <div class="footer-row"><span>ShowWise reads this page for the demo.</span><span class="safe">Payment is not available in this demo.</span></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

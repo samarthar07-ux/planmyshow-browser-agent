@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShowWise</title>
+  <link rel="stylesheet" href="sidepanel.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div class="brand-mark">S</div>
+      <div>
+        <h1>ShowWise</h1>
+        <p>Your booking decision assistant</p>
+      </div>
+    </header>
+
+    <div class="notice">DEMO MODE · SIMULATED DATA</div>
+    <section class="intro">
+      <p class="eyebrow">BEYOND THE BROWSER</p>
+      <h2>Buy now, or wait?</h2>
+      <p>Analyse the booking page currently open in your browser.</p>
+    </section>
+
+    <button id="analyse" class="primary">Analyse this booking page</button>
+    <p id="status" class="status" role="status">Open the local mock booking site, then analyse it.</p>
+
+    <section id="result" class="result hidden" aria-live="polite">
+      <div class="result-top">
+        <span class="eyebrow">SHOWWISE RECOMMENDATION</span>
+        <span id="verdict" class="verdict">WAIT</span>
+      </div>
+      <h3 id="movie">Movie</h3>
+      <p id="details" class="muted"></p>
+      <div class="metrics">
+        <div><span>Ticket</span><strong id="ticket"></strong></div>
+        <div><span>Booking fee</span><strong id="fee"></strong></div>
+        <div><span>Available seats</span><strong id="seats"></strong></div>
+        <div><span>Demand</span><strong id="demand"></strong></div>
+      </div>
+      <h4>Why this recommendation?</h4>
+      <ul id="reasons"></ul>
+      <p class="disclaimer">This is a rule-based demo recommendation using simulated data. It is not a guaranteed prediction of future prices or seat availability.</p>
+    </section>
+
+    <footer>You stay in control. ShowWise does not access payment details.</footer>
+  </main>
+  <script src="sidepanel.js"></script>
+</body>
+</html>
