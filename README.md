@@ -87,6 +87,6 @@ Only mark an integration as implemented in the presentation or demo after your t
 
 ## Submission links
 
-- Ideathon PPT: `ADD_PUBLIC_DRIVE_LINK_HERE`
-- Video pitch: `ADD_YOUTUBE_LINK_HERE`
-- Team name / ID: `ADD_TEAM_DETAILS_HERE`
+- Ideathon PPT: `https://docs.google.com/presentation/d/1Ehq3IQNcnqWbqLTJGHOdj4zcBwU23YaR/edit?usp=drivesdk&ouid=110347616832710586360&rtpof=true&sd=true`
+- Video pitch: `https://youtu.be/aQjQSvQaF9Q?si=Nprjbo2AUY43Jfxl`
+- Team name / ID: `SCORPIAN`
