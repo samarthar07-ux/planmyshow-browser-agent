@@ -1,10 +1,10 @@
-// Reads only explicitly labelled ShowWise demo data from the local mock site.
+// Reads only explicitly labelled Plan my Show demo data from the local mock site.
 // No third-party booking websites are accessed by this starter.
 
-function readShowWisePage() {
-  const showCard = document.querySelector("[data-showwise-show]");
+function readPlan my ShowPage() {
+  const showCard = document.querySelector("[data-Plan my Show-show]");
   if (!showCard) {
-    throw new Error("No ShowWise demo show was found on this page.");
+    throw new Error("No Plan my Show demo show was found on this page.");
   }
 
   const seats = [...document.querySelectorAll("[data-seat]")];
@@ -27,10 +27,10 @@ function readShowWisePage() {
 }
 
 chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
-  if (message?.type !== "SHOWWISE_READ_PAGE") return false;
+  if (message?.type !== "Plan my Show_READ_PAGE") return false;
 
   try {
-    sendResponse({ ok: true, data: readShowWisePage() });
+    sendResponse({ ok: true, data: readPlan my ShowPage() });
   } catch (error) {
     sendResponse({ ok: false, error: error.message });
   }

@@ -1,4 +1,4 @@
-const show = document.querySelector("[data-showwise-show]");
+const show = document.querySelector("[data-Plan my Show-show]");
 const demandSelect = document.querySelector("#demand");
 const daysSelect = document.querySelector("#days");
 

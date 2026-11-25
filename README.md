@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 # PLAN MY SHOW – Beyond the Browser
 
-**PLAN MY SHOW** is a browser-extension prototype for movie-booking pages. It reads show and seat information from the supplied mock booking site, then displays an explainable **BUY NOW**, **WAIT**, or **SWITCH SHOW** recommendation.
+PlanMyShow is a browser-extension prototype for movie-booking pages. It reads show and seat information from the supplied mock booking site, then displays an explainable **BUY NOW**, **WAIT**, or **SWITCH SHOW** recommendation.
+
+**Prototype scope:** This starter project uses a local mock booking site and illustrative/simulated data. It does not connect to real ticket-booking platforms, process payments, or guarantee future prices.
+
+=======
+# Plan my Show – Beyond the Browser
+
+**Plan my Show** is a browser-extension prototype for movie-booking pages. It reads show and seat information from the supplied mock booking site, then displays an explainable **BUY NOW**, **WAIT**, or **SWITCH SHOW** recommendation.
+>>>>>>> 2e56977 (Update project branding to PlanMyShow)
 
 > **Prototype scope:** This starter project uses a local mock booking site and illustrative/simulated data. It does not connect to real ticket-booking platforms, process payments, or guarantee future prices.
 
@@ -14,14 +23,14 @@ Plan my Show demonstrates a browser agent that can observe information on a page
 
 - A local mock cinema-booking page with sample shows and seat availability.
 - A Chrome Manifest V3 extension with a side panel.
-- A content script that reads ShowWise-labelled data from the active mock page.
+- A content script that reads Plan my Show-labelled data from the active mock page.
 - A basic, rule-based BUY NOW / WAIT / SWITCH SHOW recommendation with visible reasons.
 - A clearly displayed simulated-data notice.
 
 ## Repository structure
 
 ```text
-planmyshow/
+ 2e56977 (Update project branding to PlanMyShow)
 ├── extension/             # Chrome extension (Manifest V3)
 ├── mock-booking-site/     # Local demo website; simulated listings only
 ├── backend/               # Notes and planned cloud integration
@@ -49,8 +58,8 @@ If you use a different port, update the `matches` entry in `extension/manifest.j
 2. Turn on **Developer mode**.
 3. Select **Load unpacked**.
 4. Choose this repository's `extension` folder.
-5. Pin the ShowWise extension if desired.
-6. Open the mock booking page, then click the ShowWise extension icon to open its side panel.
+5. Pin the Plan my Show extension if desired.
+6. Open the mock booking page, then click the Plan my Show extension icon to open its side panel.
 7. Click **Analyse this booking page** in the side panel.
 
 ### 3. Test the recommendation

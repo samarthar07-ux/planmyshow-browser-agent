@@ -59,7 +59,7 @@ analyseButton.addEventListener("click", async () => {
     const [tab] = await chrome.tabs.query({ active: true, lastFocusedWindow: true });
     if (!tab?.id) throw new Error("Could not identify the active tab.");
 
-    const response = await chrome.tabs.sendMessage(tab.id, { type: "SHOWWISE_READ_PAGE" });
+    const response = await chrome.tabs.sendMessage(tab.id, { type: "Plan my Show_READ_PAGE" });
     if (!response?.ok) throw new Error(response?.error || "Could not read the demo page.");
     render(response.data);
   } catch (error) {
